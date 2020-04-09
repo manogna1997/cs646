@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ArticleEntity" representedClassName=".ArticleEntity" syncable="YES">
+        <attribute name="articleDescription" optional="YES" attributeType="String"/>
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="publishedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="urlToImage" optional="YES" attributeType="String"/>
+        <relationship name="source" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SourceEntity"/>
+    </entity>
+    <entity name="NewStoriesEntity" representedClassName=".NewStoriesEntity" syncable="YES">
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="totalResults" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="articles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleEntity"/>
+    </entity>
+    <entity name="SettingEntity" representedClassName=".SettingEntity" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="sources" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SourceElementEntity" representedClassName=".SourceElementEntity" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="sourceDescription" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SourceEntity" representedClassName=".SourceEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SourcesEntity" representedClassName=".SourcesEntity" syncable="YES">
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <relationship name="sources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SourceElementEntity"/>
+    </entity>
+    <elements>
+        <element name="ArticleEntity" positionX="98.08203125" positionY="-470.484375" width="128" height="163"/>
+        <element name="SourceEntity" positionX="263.0390625" positionY="-438.05859375" width="128" height="73"/>
+        <element name="NewStoriesEntity" positionX="-83.4921875" positionY="-444.40234375" width="128" height="88"/>
+        <element name="SourcesEntity" positionX="-68.375" positionY="-198.52734375" width="128" height="73"/>
+        <element name="SourceElementEntity" positionX="153.921875" positionY="-214.3828125" width="128" height="148"/>
+        <element name="SettingEntity" positionX="135" positionY="-270" width="128" height="28"/>
+    </elements>
+</model>

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "number":"CS 646",
+        "title":"iPad2/iPhone Application Development",
+        "room":"GC 1504",
+        "time":"7:00 pm"
+    },
+    {
+         "id": 2,
+        "number":"CS 647",
+        "title":"Web Application Development",
+        "room":"GC 1504",
+        "time":"8:00 pm"
+    },{
+         "id": 3,
+        "number":"CS 648",
+        "title":"Android Application Development",
+        "room":"GC 1504",
+        "time":"9:00 pm"
+    },
+    {
+         "id": 4,
+        "number":"CS 648",
+        "title":"Windows Application Development",
+        "room":"GC 1504",
+        "time":"10:00 pm"
+    }
+]
+

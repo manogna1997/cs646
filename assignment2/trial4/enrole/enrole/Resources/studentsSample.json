@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "studentname": "student1",
+    "email": "student2@sdsu.com",
+    "redid": "123",
+    "classSelected": [
+      {
+        "id": 4,
+        "number": "CS 646",
+        "title": "iPad2/iPhone Application Development",
+        "room": "GC 1504",
+        "time": "7:00 pm"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "studentname": "student2",
+    "email": "student2@sdsu.com",
+    "redid": "12",
+    "classSelected": [
+      {
+        "id": 2,
+        "number": "CS 646",
+        "title": "iPad2/iPhone Application Development",
+        "room": "GC 1504",
+        "time": "7:00 pm"
+      },
+      {
+        "id": 3,
+        "number": "CS 648",
+        "title": "Android Application Development",
+        "room": "GC 1504",
+        "time": "9:00 pm"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "studentname": "student3",
+    "email": "student3@sdsu.com",
+    "redid": "123",
+    "classSelected": [
+      {
+        "id": 1,
+        "number": "CS 646",
+        "title": "iPad2/iPhone Application Development",
+        "room": "GC 1504",
+        "time": "7:00 pm"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "studentname": "student4",
+    "email": "student4@sdsu.com",
+    "redid": "1234"
+  }
+]
